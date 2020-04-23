@@ -722,7 +722,8 @@ nav:before {
 -----------------------------------------------------------------*/
 
 #teams {
-    background-color: #27a599;
+    background-color: #4e27b1;
+    /*#27a599;*/
     width: 100%;
     position: relative;
     color: #ffffff;
@@ -756,7 +757,7 @@ div#teams {
 
 .teams-item {
     background-color: #ffffff;
-    height: 350px;
+    height: 300px;
 }
 
 .teams-items-img img {
@@ -770,10 +771,10 @@ div#teams {
     display: inline-block;
     overflow: hidden;
     margin: 8px;
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 180px;
+    max-width: 180px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #d4d0f7;
     color: #2B2B2B;
     text-align: center;
     font-size: 16px;
@@ -854,7 +855,7 @@ div#teams {
 -----------------------------------------------------------------*/
 
 .testimonials {
-    background-color: #2c7dbc;
+    background-color: #cda4f3c1;
     margin-top: -40px;
     padding-top: 10px;
     padding-bottom: 30px;
