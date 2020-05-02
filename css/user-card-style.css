@@ -37,7 +37,7 @@
   top: 50%;
 }
 .user-card .profile {
-  border-radius: 50%;
+  border-radius: 20%;
   position: absolute;
   bottom: 50%;
   left: 50%;
