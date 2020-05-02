@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Menu Selection</title>
+    <title>Selección de Menu</title>
 
     <style>
       .bd-placeholder-img {
@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/cubeportfolio.min.css">
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/user-card-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/rating.css" />
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -43,7 +44,7 @@
   <body>
     <header>
     <nav class="navbar navbar-expand-lg fixed-top activate-menu navbar-light bg-light">
-        <a class="navbar-brand" href="#">CHEF POP</a>
+        <a class="navbar-brand" href="index.html">CHEF POP</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -58,8 +59,12 @@
                     <!--#features-->
                 </li>
                 <li>
-                    <a class="nav-link" href="how_to_use.html">Cómo funciona</a>
+                    <a class="nav-link" href="index.html#services ">Cómo funciona</a>
                     <!--#services-->
+                </li>
+                <li>
+                    <a class="nav-link" href="#contact">Contacto</a>
+                    <!--#contacto-->
                 </li>
                 <li>
                     <a class="nav-link" href="login.html">Iniciar sesión</a>
@@ -75,7 +80,7 @@
     <div class="container">
       <div class="space" style="padding:20px 0"></div>
       <h1>Menu Selection</h1>
-      <p class="lead text-muted">Here you go, let's see what are you thinking at</p>
+      <p class="lead text-muted">Hora de escoger lo que estas pensando!</p>
     </div>
   </section>
 
@@ -96,6 +101,21 @@
             </div>
           </figcaption>
         </div>
+
+        <!--============================ User Rating ============================-->
+        <div class="rating">
+          <input type="radio" name="rating" id="rating-5">
+          <label for="rating-5"></label>
+          <input type="radio" name="rating" id="rating-4">
+          <label for="rating-4"></label>
+          <input type="radio" name="rating" id="rating-3">
+          <label for="rating-3"></label>
+          <input type="radio" name="rating" id="rating-2">
+          <label for="rating-2"></label>
+          <input type="radio" name="rating" id="rating-1">
+          <label for="rating-1"></label>
+        </div>
+        <button id="reserva" class="btn btn-success" style="width: 100%; height:50px;margin-bottom:50px;" onClick="reservar()">Reservar ahora!</button>
       </div>
 
       <!--============================ All dishes go here ============================-->
@@ -109,11 +129,11 @@
                 <center>
                   <h5>Ensaladilla</h5>
                 </center>
-                <p class="card-text">La tipica y exitosa ensaladilla rusa, en su version mas tradicional, es un plato que no puede faltar en tiempos de calor.</p>
+                <p class="card-text">La típica y exitosa ensaladilla rusa, en su versión mas tradicional, es un plato que no puede faltar en tiempos de calor.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group" style="margin-left:auto; margin-right;">
                     <i class="fa fa-shopping-cart" style="padding:10px 10px"></i>
-                    <button type="button" class="btn btn-success" onClick="add_to_card('0')">Add</button>
+                    <button type="button" class="btn btn-success" onClick="add_to_card('0')">Añadir</button>
                   </div>
                 </div>
               </div>
@@ -131,7 +151,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group" style="margin-left:auto; margin-right;">
                     <i class="fa fa-shopping-cart" style="padding:10px 10px"></i>
-                    <button type="button" class="btn btn-success" onClick="add_to_card('1')">Add</button>
+                    <button type="button" class="btn btn-success" onClick="add_to_card('1')">Añadir</button>
                   </div>
                 </div>
               </div>
@@ -150,7 +170,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group" style="margin-left:auto; margin-right;">
                     <i class="fa fa-shopping-cart" style="padding:10px 10px"></i>
-                    <button type="button" class="btn btn-success" onClick="add_to_card('2')">Add</button>
+                    <button type="button" class="btn btn-success" onClick="add_to_card('2')">Añadir</button>
                   </div>
                 </div>
               </div>
@@ -169,7 +189,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group" style="margin-left:auto; margin-right;">
                     <i class="fa fa-shopping-cart" style="padding:10px 10px"></i>
-                    <button type="button" class="btn btn-success" onClick="add_to_card('3')">Add</button>
+                    <button type="button" class="btn btn-success" onClick="add_to_card('3')">Añadir</button>
                   </div>
                 </div>
               </div>
@@ -187,7 +207,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group" style="margin-left:auto; margin-right;">
                     <i class="fa fa-shopping-cart" style="padding:10px 10px"></i>
-                    <button type="button" class="btn btn-success" onClick="add_to_card('4')">Add</button>
+                    <button type="button" class="btn btn-success" onClick="add_to_card('4')">Añadir</button>
                   </div>
                 </div>
               </div>
@@ -201,11 +221,11 @@
                 <center>
                   <h5>Mixto a la parrilla</h5>
                 </center>
-                <p class="card-text">Para todo aquel que neceista ver un plato a rebosar, esta maravilla le resultará una explosion de sabores.</p>
+                <p class="card-text">Para todo aquel que neceista ver un plato a rebosar, esta maravilla le resultará una explosión de sabores.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group" style="margin-left:auto; margin-right;">
                     <i class="fa fa-shopping-cart" style="padding:10px 10px"></i>
-                    <button type="button" class="btn btn-success" onClick="add_to_card('4')">Add</button>
+                    <button type="button" class="btn btn-success" onClick="add_to_card('4')">Añadir</button>
                   </div>
                 </div>
               </div>
@@ -219,11 +239,11 @@
                 <center>
                   <h5>Crema catalana</h5>
                 </center>
-                <p class="card-text">Postre tipico de Cataluña, es una crema de delicada textura pero con un exquisito sabor. Un postre merecedor de ser consumid en las mas importantes celebraciones.</p>
+                <p class="card-text">Postre típico de Cataluña, es una crema de delicada textura pero con un exquisito sabor. Un postre merecedor de ser consumido en las más importantes celebraciones.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group" style="margin-left:auto; margin-right;">
                     <i class="fa fa-shopping-cart" style="padding:10px 10px"></i>
-                    <button type="button" class="btn btn-success" onClick="add_to_card('5')">Add</button>
+                    <button type="button" class="btn btn-success" onClick="add_to_card('5')">Añadir</button>
                   </div>
                 </div>
               </div>
@@ -241,7 +261,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group" style="margin-left:auto; margin-right;">
                     <i class="fa fa-shopping-cart" style="padding:10px 10px"></i>
-                    <button type="button" class="btn btn-success" onClick="add_to_card('6')">Add</button>
+                    <button type="button" class="btn btn-success" onClick="add_to_card('6')">Añadir</button>
                   </div>
                 </div>
               </div>
@@ -259,7 +279,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group" style="margin-left:auto; margin-right;">
                     <i class="fa fa-shopping-cart" style="padding:10px 10px"></i>
-                    <button type="button" class="btn btn-success" onClick="add_to_card('7')">Add</button>
+                    <button type="button" class="btn btn-success" onClick="add_to_card('7')">Añadir</button>
                   </div>
                 </div>
               </div>
@@ -271,7 +291,8 @@
 
       <!--============== List of the selected dishes ==============-->
       <div class="col">
-        <div id="selected" class="text-center" style="display:none;">
+        <div id="selected" class="card text-center" style="display:none;">
+          <h4 style="height:40px; margin-top:15px">Platos seleccionados</h4>
           <ul class="list-group" id="list_cart" style="min-width:300px">
 
             <li class="list-group-item">
@@ -281,20 +302,15 @@
                   <img style = "heigth: 100px; width:100px;" src="" alt="">
                 </div>
                 <div class="col my-auto">
-                  <div class="card text-center">
                     <h7></h7>
-                  </div>
                 </div>
                 <div class="col my-auto text-center">
-                    <button id ="denyButton" type ="button" class="btn btn-danger" onClick="delete_from_cart(this.id)">Deny</button>
+                    <button id ="denyButton" type ="button" class="btn btn-danger" onClick="delete_from_cart(this.id)">Retirar</button>
                 </div>
               </div>
             </li>
 
           </ul>
-
-          <!--==== Accept requested cart ====-->
-          <button type ="button" class="btn btn-success">Let's reserve it!</button>
         </div>
       </div>
 
@@ -308,13 +324,100 @@
 
 </main>
 
+<!--================== Contact section =====================-->
 
+<div id="contact" class="contact">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                <h1 class="contact-heading">Ponte en contacto con nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum ratione atque praesentium laudantium quaerat laborum consecteturLorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                <div class="row margin-15px-bottom">
+                    <div class="col-sm-1 no-padding">
+                        <div class="contact-icon text-blue">
+                            <i class="fa fa-map-marker" aria-hidden="true" style="color:rgba(85, 28, 228, 0.9)"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-11">
+                        <p class="text-small">Barcelona, 08001<br>Barcelona, 08001</p>
+                    </div>
+                </div>
+
+                <div class="row margin-15px-bottom">
+                    <div class="col-sm-1 no-padding">
+                        <div class="contact-icon text-blue">
+                            <i class="fa fa-phone" aria-hidden="true" style="color:rgba(85, 28, 228, 0.9)"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-11">
+                        <p class="text-small">+34 123 456 789<br>+34 123 456 789</p>
+                    </div>
+                </div>
+
+                <div class="row margin-15px-bottom">
+                    <div class="col-sm-1 no-padding">
+                        <div class="contact-icon text-blue">
+                            <i class="fa fa-globe" aria-hidden="true" style="color:rgba(85, 28, 228, 0.9)"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-11 xs-margin-50px-bottom">
+                        <p class="text-small">chefpop@support.com<br>www.chefpop.com</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                <!-- Starting of ajax contact form -->
+                <form class="contact__form" method="post" action="contact_mail.php">
+                    <!-- Element of the ajax contact form -->
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input name="name" type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input name="email" type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="col-12 form-group">
+                            <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input name="submit" type="submit" class="button-style" value="Send Message">
+                        </div>
+                    </div>
+
+
+                </form>
+                <!-- Ending of ajax contact form -->
+                <!-- Starting of successful form message -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                            Your message was sent successfully!!
+                        </div>
+                    </div>
+                </div>
+                <!-- Ending of successful form message -->
+            </div>
+        </div>
+    </div>
+</div>
 <footer class="text-center pos-re">
     <div class="container">
         <div class="footer__box">
             <!-- Logo -->
             <a class="logo" href="#">
-                <img src="img/logo-light.png" alt="logo">
+                <img src="img/chef-light.png" alt="logo">
             </a>
 
             <div class="social">

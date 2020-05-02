@@ -50,11 +50,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Poppins;
+    font-family: /*'Montserrat';*/
+    'Poppins';
 }
 
 p {
-    font-family: Roboto;
+    font-family: /*'Montserrat';*/
+    'Roboto';
+    font-size: 15px;
 }
 
 a:hover {
@@ -163,8 +166,8 @@ table {
     color: #ffffff;
     cursor: pointer;
     display: inline-block;
-    font-size: 1.2rem;
-    ;
+    font-size: 1rem;
+    text-align: center;
     line-height: 1em;
     outline: none;
     padding: 0.8rem 2.5rem 0.7rem;
@@ -172,6 +175,10 @@ table {
     text-transform: uppercase;
     font-weight: 400;
     text-decoration: none !important;
+}
+
+.showcase h1 {
+    font-family: Poppins;
 }
 
 .showcase-btn {
@@ -430,6 +437,25 @@ nav:before {
     transform: translateY(-1.5rem) scale(1.03);
 }
 
+.features p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.75;
+    font-family: 'Montserrat';
+}
+
+
+/*Título: Nos preocupamos por ti*/
+
+.features2-heading {
+    font-weight: 300;
+}
+
+.features-section-2 p {
+    font-family: 'Montserrat';
+    text-align: justify;
+}
+
 
 /* Card style end here */
 
@@ -589,6 +615,10 @@ nav:before {
     text-align: center;
 }
 
+.features-section-2 p {
+    font-family: 'Roboto';
+}
+
 
 /* ----------------------------------------------------------------
      [ End Features ]
@@ -621,6 +651,11 @@ nav:before {
     margin-top: 20px;
 }
 
+.services-heading {
+    margin: 50px 0;
+    font-weight: 300;
+}
+
 
 /*
   nav link items
@@ -634,11 +669,11 @@ nav:before {
     color: #999;
     background: transparent;
     transition: all ease .5s;
-    border: 1px solid rgba(31, 181, 172, .9);
+    border: 1px solid rgba(88, 95, 228, 0.623);
 }
 
 .folded-corner:hover {
-    background-color: rgba(31, 181, 172, .9);
+    background-color: rgba(88, 95, 228, 0.623);
 }
 
 
@@ -730,7 +765,7 @@ nav:before {
 }
 
 div#teams {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 30px;
 }
 
@@ -757,7 +792,7 @@ div#teams {
 
 .teams-item {
     background-color: #ffffff;
-    height: 300px;
+    height: 250px;
 }
 
 .teams-items-img img {
@@ -806,7 +841,7 @@ div#teams {
 }
 
 .teams-item h3 {
-    font-family: 'Oswald';
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 400;
@@ -814,13 +849,15 @@ div#teams {
     margin: 3px 0;
 }
 
+
+/*
 .teams-item h5 {
     font-weight: 400;
     margin: 0;
     text-transform: uppercase;
     color: #888;
     letter-spacing: 1px;
-}
+}*/
 
 .teams-item .icons i {
     color: #999;
@@ -855,10 +892,17 @@ div#teams {
 -----------------------------------------------------------------*/
 
 .testimonials {
-    background-color: #cda4f3c1;
+    background-color: rgba(88, 95, 228, 0.623);
+    /*#cda4f3c1*/
     margin-top: -40px;
     padding-top: 10px;
     padding-bottom: 30px;
+}
+
+.testimonials-heading h1 {
+    margin: 40px 0;
+    font-weight: 300;
+    color: #ffffff;
 }
 
 .cd-testimonials-wrapper {
@@ -868,12 +912,12 @@ div#teams {
     margin: 2em auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding: 20px 40px 70px;
+    padding: 20px 20px 50px;
     z-index: 1;
 }
 
 .cd-testimonials-all.is-visible {
-    top: 50px;
+    top: 20px;
 }
 
 .cd-testimonials-wrapper::after {
@@ -888,7 +932,7 @@ div#teams {
     margin-left: -25px;
     font-family: "Georgia", serif;
     color: #ffffff;
-    font-size: 70px;
+    font-size: 50px;
     font-size: 4.375rem;
     text-align: center;
     /* visible on big devices only */
@@ -898,7 +942,7 @@ div#teams {
 @media only screen and (min-width: 768px) {
     .cd-testimonials-wrapper {
         margin: 4em auto;
-        padding: 64px 50px 114px;
+        padding: 40px 50px 50px;
     }
 }
 
@@ -908,6 +952,9 @@ div#teams {
         display: block;
     }
 }
+
+
+/*Opiniones*/
 
 .cd-testimonials {
     color: #ffffff;
@@ -1172,7 +1219,8 @@ div#teams {
 
 .cd-testimonials-all p {
     position: relative;
-    background: #79b6e4;
+    background: rgb(176, 164, 226);
+    /*#79b6e4;*/
     color: #ffffff;
     padding: 2em;
     -webkit-font-smoothing: antialiased;
@@ -1191,7 +1239,7 @@ div#teams {
     height: 0;
     width: 0;
     border: 8px solid transparent;
-    border-top-color: #79b6e4;
+    border-top-color: rgb(176, 164, 226);
 }
 
 .cd-testimonials-all .cd-author {
@@ -1507,6 +1555,10 @@ figure.blog-item.hover:after {
     padding-top: -30px;
 }
 
+.contact p {
+    font-family: 'Montserrat';
+}
+
 .container .map {
     width: 100%;
     height: 200px;
@@ -1524,10 +1576,6 @@ iframe {
 .contact-icon {
     text-align: center;
     font-size: 35px;
-}
-
-.text-blue {
-    color: rgb(0, 171, 201);
 }
 
 .contact-heading {

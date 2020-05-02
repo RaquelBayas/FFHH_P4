@@ -20,15 +20,24 @@ function add_to_card(i){
     if(selected.style.display == "none"){
       selected.style.display = "block";
       list_cart.children[0].children[0].children[0].children[0].src = img_dish;
-      list_cart.children[0].children[0].children[1].children[0].children[0].innerText = dish_name;
+      list_cart.children[0].children[0].children[1].children[0].innerText = dish_name;
 
 
     }else{
-      var copy = list_cart.children[0].cloneNode(true);
-      copy.children[0].children[0].children[0].src = img_dish;
-      copy.children[0].children[1].children[0].children[0].innerText = dish_name;
-      copy.children[0].children[2].children[0].id = randomStr();
-      list_cart.appendChild(copy);
+      var already_in = false;
+      for (var i = 0; i<list_cart.children.length; i++){
+        if(list_cart.children[i].children[0].children[1].children[0].innerText==dish_name)
+          already_in = true;
+      }
+      if(!already_in){
+        var copy = list_cart.children[0].cloneNode(true);
+        copy.children[0].children[0].children[0].src = img_dish;
+        copy.children[0].children[1].children[0].innerText = dish_name;
+        copy.children[0].children[2].children[0].id = randomStr();
+        list_cart.appendChild(copy);
+      }else{
+        alert("Este plato ya fue seleccionado");
+      }
     }
 }
 
@@ -52,4 +61,11 @@ function randomStr() {
           arr[Math.floor(Math.random() * arr.length)];
     }
     return ans;
+}
+
+function reservar(){
+  if(selected.style.display == "none")
+    alert("Por favor, seleccione los platos que desea antes de realizar la reserva")
+  else
+    location.href="Date&Hour.html";
 }
