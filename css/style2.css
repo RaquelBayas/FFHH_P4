@@ -673,14 +673,11 @@ header h1 {
 
 .cd-faq-categories a {
   position: relative;
-  top:80px;
-  right:200px;
-  bottom: 200px;
   display: block;
   overflow: hidden;
   height: 70px;
-  width: 300px;
   line-height: 70px;
+  padding: 0 28px 0 16px;
   padding: 0 28px 0 0;
   background-color: #4e5359;
   -webkit-font-smoothing: antialiased;
@@ -734,10 +731,6 @@ header h1 {
   .no-touch .cd-faq-categories a:hover {
     background: #555b61;
   }
-  .no-js .cd-faq-categories {
-    width: 100%;
-    margin-bottom: 2em;
-  }
 .cd-faq-categories a2 {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -754,18 +747,35 @@ header h1 {
   .no-touch .cd-faq-categories a2:hover {
     background: #555b61;
   }
-
+  .no-js .cd-faq-categories {
+    width: 100%;
+    margin-bottom: 2em;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .cd-faq-categories {
     position: absolute;
     top: 0px;
-    left: 0;
+    left: 200px;
     width: 200px;
     z-index: 2;
   }
   .cd-faq-categories a::before {
+    /* decorative rectangle on the left visible for the selected item */
+    display: block;
+    top: 0;
+    right: auto;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #9c80d8;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+ .cd-faq-categories a2::before {
     /* decorative rectangle on the left visible for the selected item */
     display: block;
     top: 0;
