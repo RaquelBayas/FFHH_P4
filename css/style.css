@@ -181,6 +181,9 @@ table {
     font-family: Poppins;
 }
 
+
+/*Botones: Empezar y Reservar*/
+
 .showcase-btn {
     margin: 1.5rem;
     width: 150px;
@@ -229,7 +232,7 @@ table {
 
 .button-style:hover,
 .button-style.hover {
-    background-color: #ff0195ba;
+    background-color: #ff0195;
     color: #ffffff;
 }
 
@@ -293,6 +296,9 @@ nav a {
     color: #0dd;
 }
 
+
+/*TITULO IZQUIERDO (CHEF POP) de la Barra de NAV.*/
+
 a.navbar-brand {
     color: #fff !important;
 }
@@ -332,9 +338,12 @@ a.navbar-brand {
     color: #0dd;
 }
 
+
+/*Barra nav*/
+
 .activate-menu {
     /* #2c7dbc 15%, #7cccc5 70%*/
-    background-image: linear-gradient(-140deg, rgba(88, 95, 228, 0.623) 15%, rgb(233, 156, 192) 70%);
+    background-image: linear-gradient(-140deg, #585fe49f 15%, #e99cc0 70%);
     -webkit-box-shadow: -3px 13px 24px -1px rgba(0, 0, 0, 0.3);
     box-shadow: -3px 13px 24px -1px rgba(0, 0, 0, 0.3);
 }
@@ -377,7 +386,7 @@ nav:before {
 }
 
 
-/*Enlaces de la barra de navegación: Inicio, Chefs, Cómo funciona, Iniciar sesión*/
+/*Enlaces de la barra de navegación: Inicio, Chefs, Cómo funciona, Contacto, Iniciar sesión*/
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
@@ -448,7 +457,7 @@ nav:before {
 /*Título: Nos preocupamos por ti*/
 
 .features2-heading {
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .features-section-2 p {
@@ -460,7 +469,7 @@ nav:before {
 /* Card style end here */
 
 
-/* Testimonial section start here */
+/* OPINIONES DE LOS CLIENTES */
 
 #testimonial {
     padding: 50px 0 30px 0;
@@ -484,9 +493,9 @@ nav:before {
 -----------------------------------------------------------------*/
 
 
-/* ----------------------------------------------------------------
-     [ 05 Start Showcase ]
------------------------------------------------------------------*/
+/* -------------------------------------------------------------------
+     [ 05 Start Showcase ]  FONDO DE INICIO DE LA PÁGINA PRINCIPAL
+---------------------------------------------------------------------*/
 
 #showcase {
     /*rgba(50, 139, 207, 0.8), rgba(161, 218, 213, 0.8)*/
@@ -716,7 +725,7 @@ nav:before {
 /*Iconos*/
 
 .fa-icon-image {
-    color: rgba(85, 28, 228, 0.9);
+    color: #551ce4;
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -892,8 +901,7 @@ div#teams {
 -----------------------------------------------------------------*/
 
 .testimonials {
-    background-color: rgba(88, 95, 228, 0.623);
-    /*#cda4f3c1*/
+    background-color: #585fe49f;
     margin-top: -40px;
     padding-top: 10px;
     padding-bottom: 30px;
@@ -1220,7 +1228,7 @@ div#teams {
 .cd-testimonials-all p {
     position: relative;
     background: rgb(176, 164, 226);
-    /*#79b6e4;*/
+    /*Hex: #B0A4E2*/
     color: #ffffff;
     padding: 2em;
     -webkit-font-smoothing: antialiased;
@@ -1338,216 +1346,6 @@ div#teams {
 
 
 /* ----------------------------------------------------------------
-     [ 11 Start Blog ]
------------------------------------------------------------------*/
-
-.blog {
-    background-color: #6dbdc3;
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-    margin-top: -4rem;
-}
-
-figure.blog-item {
-    font-family: 'Raleway', Arial, sans-serif;
-    position: relative;
-    float: left;
-    overflow: hidden;
-    margin: 10px 1%;
-    min-width: 220px;
-    max-width: 310px;
-    width: 100%;
-    background: #1a1a1a;
-    color: #ffffff;
-    text-align: left;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
-}
-
-figure.blog-item * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-}
-
-figure.blog-item .image {
-    position: relative;
-}
-
-figure.blog-item img {
-    max-width: 100%;
-    vertical-align: top;
-}
-
-figure.blog-item i {
-    position: absolute;
-    top: 7px;
-    left: 12px;
-    font-size: 32px;
-    opacity: 0;
-    z-index: 2;
-    -webkit-transition-delay: 0;
-    transition-delay: 0;
-}
-
-figure.blog-item h3 {
-    margin: 0 0 10px;
-    font-weight: 200;
-    font-size: 23px;
-}
-
-figure.blog-item p {
-    margin: 0;
-}
-
-figure.blog-item:before,
-figure.blog-item:after {
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-    z-index: 1;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
-
-figure.blog-item:before {
-    background-color: #20638f;
-    -webkit-transform: skew(-45deg) translateX(-150%);
-    transform: skew(-45deg) translateX(-150%);
-    border-right: 1px solid #20638f;
-}
-
-figure.blog-item:after {
-    background-color: #962d22;
-    -webkit-transform: skew(-45deg) translateX(-175%);
-    transform: skew(-45deg) translateX(-175%);
-    border-right: 1px solid #962d22;
-}
-
-figure.blog-item figcaption {
-    padding: 25px;
-    background-color: #ffffff;
-    color: #000000;
-    position: relative;
-    font-size: 0.9em;
-}
-
-figure.blog-item figcaption p {
-    margin-bottom: 15px;
-}
-
-figure.blog-item figcaption:before {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    content: '';
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
-    background-color: #20638f;
-    -webkit-transform: skew(-45deg) translateX(50%);
-    transform: skew(-45deg) translateX(50%);
-    border-right: 1px solid #20638f;
-}
-
-figure.blog-item .read-more {
-    display: inline-block;
-    width: auto;
-    border: 2px solid #20638f;
-    padding: 0.4em 0.6em;
-    color: #20638f;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 0.9em;
-    text-transform: uppercase;
-}
-
-figure.blog-item .read-more:hover {
-    background-color: #20638f;
-    color: #ffffff;
-}
-
-figure.blog-item .date {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    color: #fff;
-    max-height: 48px;
-    max-width: 48px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    z-index: 1;
-}
-
-figure.blog-item .date span {
-    display: block;
-    line-height: 24px;
-}
-
-figure.blog-item .date .month {
-    font-size: 14px;
-}
-
-figure.blog-item:hover i,
-figure.blog-item.hover i {
-    opacity: 0.7;
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-}
-
-figure.blog-item:hover:before,
-figure.blog-item.hover:before {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    -webkit-transform: skew(-45deg) translateX(-50%);
-    transform: skew(-45deg) translateX(-50%);
-}
-
-figure.blog-item:hover:after,
-figure.blog-item.hover:after {
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-    -webkit-transform: skew(-45deg) translateX(-75%);
-    transform: skew(-45deg) translateX(-75%);
-}
-
-@media (max-width: 705.98px) {
-    .blog-item-box {
-        margin: 0 auto;
-        width: 300px;
-    }
-    figure.snip1197 blockquote {
-        position: relative;
-        padding: 30px;
-        font-size: 0.8em;
-        font-weight: 500;
-        text-align: left;
-        margin: 0;
-        line-height: 1.6em;
-        font-style: italic;
-    }
-}
-
-
-/* ----------------------------------------------------------------
-     [ End Blog ]
------------------------------------------------------------------*/
-
-
-/* ----------------------------------------------------------------
      [ 12 Start Contact ]
 -----------------------------------------------------------------*/
 
@@ -1630,7 +1428,6 @@ iframe {
 footer {
     padding: 5px 0;
     background-color: #5649ba;
-    /* #5cacc1;*/
     -webkit-clip-path: polygon(51% 46%, 100% 73%, 100% 100%, 0 100%, 0 70%);
     clip-path: polygon(51% 46%, 100% 73%, 100% 100%, 0 100%, 0 70%);
 }
