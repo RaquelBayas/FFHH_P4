@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+  <meta name="author" content="Theme Industry">
+  <!-- description -->
+  <meta name="description" content="boltex">
+  <!-- keywords -->
+  <meta name="keywords" content="">
+  <title>Chef Pop</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap3.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reserva.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/cubeportfolio.min.css">
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+</head>
+
+<body style="background-image: linear-gradient(to right bottom, rgb(233, 156, 192), rgba(156, 128, 216, 0.802), rgba(88, 95, 228, 0.623))">
+
+  <nav class="navbar navbar-expand-lg fixed-top activate-menu navbar-light bg-light">
+    <a class="navbar-brand" href="#">CHEF POP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li>
+          <a class="nav-link" href="index.html">Inicio</a>
+          <!-- #showcase-->
+        </li>
+        <li>
+          <a class="nav-link" href="chefs.html">Chefs</a>
+          <!--#features-->
+        </li>
+        <li>
+          <a class="nav-link" href="how_to_use.html">Cómo funciona</a>
+          <!--#services-->
+        </li>
+        <li>
+          <a class="nav-link" href="contact.html">Contacto</a>
+          <!--#contacto-->
+        </li>
+        <li>
+          <a class="nav-link" href="login.html">Iniciar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--================ Showcase section ===================-->
+
+
+  <div class="caja" style="margin-top : 100px;margin-bottom:100px;">
+    <div class="container">
+      <div class="space" style="padding:20px 0"></div>
+      <h1>Reserva</h1>
+      <p class="lead text-muted">Por favor rellena los campos para completar la reserva.</p>
+      <p class="lead text-muted">Los campos obligatorios están indicados con un * .</p>
+    </div>
+
+    <!-- Inicio del panel de casillas de texto para la reserva -->
+    <div class=" caja_reserva">
+      <div class="container" style="width:center;margin:auto;">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 p-2 textos-no-modificables" style = "font-size: 25px;">
+            <texto-reserva> Nombre : * </texto-reserva>
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2">
+            <input type "text" name="nombre" id="nombre" class="textos-modificables showcase-btn" >
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2 textos-no-modificables"style = "font-size: 25px;">
+            <texto-reserva> Apellidos : * </texto-reserva>
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2">
+            <input type "text" name="apellidos" id="apellidos" class="textos-modificables showcase-btn" >
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2 textos-no-modificables" style = "font-size: 25px;">
+            <texto-reserva> E-mail : *  </texto-reserva>
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2">
+            <input type="email"  id="email" class="textos-modificables showcase-btn" >
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2 textos-no-modificables" style = "font-size: 25px;">
+            <texto-reserva> Teléfono : *  </texto-reserva>
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2">
+            <input type="number" id="telefono" class="textos-modificables showcase-btn" >
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2 textos-no-modificables" style = "font-size: 25px;">
+            <texto-reserva> Número de participantes : *  </texto-reserva>
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2">
+            <input type="number" id="num_participantes" class="textos-modificables showcase-btn" >
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2 textos-no-modificables " style = "font-size: 25px;">
+            <texto-reserva> Fecha : * </texto-reserva>
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2">
+            <input type="date" id="start" name="trip-start" value="2020-05-04" min="2020-01-01" max="2024-12-31" class="textos-modificables showcase-btn" >
+          </div>
+          <div class="col-sm-12 col-md-6 p-2 textos-no-modificables" style = "font-size: 25px;">
+            <texto-reserva> Hora : * </texto-reserva>
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2">
+            <input id="appt-time" type="time" name="appt-time" min= "08:00" max = "20:00" value="08:00" class="textos-modificables showcase-btn">
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2 textos-no-modificables " >
+            <texto-reserva> Otros : </texto-reserva>
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2">
+            <input type "text" name="otros" class="textos-modificables showcase-btn">
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2 textos-no-modificables" style = "font-size: 25px;">
+            <texto-reserva> Cosas a concretar : </texto-reserva>
+
+          </div>
+          <div class="col-sm-12 col-md-6 p-2 align-align-baseline">
+            <input type "text" name="concretar" class="textos-modificables showcase-btn">
+          </div>
+
+
+        </div>
+      </div>
+      <!-- Inicio del panel de botones -->
+      <div class="panel-footer row">
+        <div class="col-xs-6 text-center">
+          <div class="previous">
+            <div class="showcase-button">
+              <button type="submit" class="button-style showcase-btn" style='margin-left:75%;padding:5px;font-size: 25px;' onclick="location.href='menu.html'">Cancelar</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-6 text-right">
+          <div class="next">
+          </div>
+
+          <div class="showcase-button">
+            <button type="submit" class="button-style showcase-btn" style='margin-left:175%;padding:5px;font-size: 25px;' onclick="valida()">Confirmar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del panel de botones -->
+    </div>
+
+
+  </div>
+
+  <!-- Fin del panel de botones -->
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+  <script src="./js/reserva.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/modernizr.custom.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/scrollreveal.min.js"></script>
+  <script src="./js/jquery.cubeportfolio.min.js"></script>
+  <script src="./js/jquery.matchHeight-min.js"></script>
+  <script src="./js/masonry.pkgd.min.js"></script>
+  <script src="./js/jquery.flexslider-min.js"></script>
+  <script src="./js/classie.js"></script>
+  <script src="./js/helper.js"></script>
+  <script src="./js/grid3d.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+
+</html>
