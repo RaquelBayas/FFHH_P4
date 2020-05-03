@@ -251,6 +251,7 @@ nav a {
 
 a.navbar-brand {
     color: #fff !important;
+    font-family: 'Poppins';
 }
 
 .navbar-default {
