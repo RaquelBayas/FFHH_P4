@@ -67,7 +67,7 @@ function reservar(){
   if(selected.style.display == "none")
     alert("Por favor, seleccione los platos que desea antes de realizar la reserva")
   else
-    location.href="Date&Hour.html";
+    location.href="reserva.html";
 }
 
 function search(){
