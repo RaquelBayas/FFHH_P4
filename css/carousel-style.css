@@ -2,8 +2,19 @@ body {
     padding-top: 20px;
 }
 
+.carousel-container{
+  /*border-style: solid;
+  border-width:2px;
+  border-radius: .8%;
+  border: 2px solid rgba(88, 95, 228, 0.623);*/
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
 .carousel {
   width: 100%;
+  border-radius: .8%;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(88, 95, 228, 0.623);
 }
 
 .slide-box {

@@ -50,9 +50,11 @@
   <link rel="stylesheet" href="css/rating.css">
 
   <!-- Button Listener -->
-  <script type="text/javascript" src="js/btn_toMenu.js">
+  <script type="text/javascript" src="js/btn_toMenu.js"></script>
 
-  </script>
+  <!-- Date Value -->
+  <script type="text/javascript" src="js/date-time.js"></script>
+
 
 </head>
 
@@ -73,7 +75,7 @@
             <!-- #showcase-->
           </li>
           <li>
-            <a class="nav-link" href="#chefs.html">Chefs</a>
+            <a class="nav-link" href="chefs.html">Chefs</a>
             <!--#features-->
           </li>
           <li>
@@ -100,30 +102,10 @@
     ellipse(150% 100% at 50% 0); -webkit-clip-path: ellipse(150% 100% at 50% 0);">
       <div class="container">
         <div class="space" style="padding:20px 0"></div>
-        <h1>Select Your Chef</h1>
-        <p class="lead text-muted">Find the perfect chef for your needs</p>
+        <h1>Escoge Un Chef</h1>
+        <p class="lead text-muted">Encuentra a la persona perfecta</p>
       </div>
     </section>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-                        <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script type="text/javascript">
-                $(function () {
-                    $('#datetimepicker1').datetimepicker();
-                });
-            </script>
-        </div>
-    </div>
 
     <div class="container mt-4 mb-2" style="width: 84%;">
 
@@ -141,33 +123,20 @@
 
         <!--################### Time and Date Picker ###################-->
         <div class="col-sm-6">
-          <div class="form-group">
-            <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-              <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" />
-              <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
-                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-              </div>
-            </div>
-          </div>
+          <input class="form-control" type="date" id="fecha-chefs" name="fecha"
+          required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" value="loadDate()" >
         </div>
-        <script type="text/javascript">
-          $(function() {
-            $('#datetimepicker2').datetimepicker({
-              locale: 'en'
-            });
-          });
-        </script>
       </div>
     </div>
 
 
     <div class="container">
       <div class="row">
-        <div class="container rounded my-2" style="border-style: solid; border-width:2px; border-color: rgb(72, 70, 75);">
+        <div class="container my-2" >
           <div class="row">
             <!--################### Chef Profiles ###################-->
 
-            <div class="user-card p-3" style="max-height: 70%; min-height: 30%; width: 100%">
+            <div class="carousel-container rounded-lg user-card p-3" style="max-height: 70%; min-height: 30%; width: 100%">
               <div class="row">
                 <!--################### Carousel ###################-->
                 <div class="col-sm-12 col-md-12 col-lg-8 col-xl-9" style="height: auto">
@@ -227,9 +196,10 @@
                   </div>
                 </div>
                 <div class="col-sm-12 col-lg-8 col-xl-9 mt-3" style="text-align: center">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <p> <b>Años de experiencia: </b>5 años <br>
+                      <b>Plato estrella: </b> Arroz con leche <br>
+                      <b>Se define como: </b> Feliz y responsable
+                  </p>
                 </div>
                 <div class="col-sm-12 col-lg-4 col-xl-3 mt-3">
 
@@ -246,8 +216,8 @@
                     <label for="rating-1"></label>
                   </div>
                 </div>
-                <div class="col-sm-12">
-                  <button id="ursula_profile" class="btn btn-success mb-0 mt-1" style="width: 100%; height:50px;margin-bottom:50px;" onClick="toMenu()">Ir a su Perfil</button>
+                <div class="col-sm-12 col-lg-9">
+                  <button id="ursula_profile" class="button-style showcase-btn" style="width: auto; height:auto;" onClick="toMenu(this.id)">Ir a su Perfil</button>
                 </div>
               </div>
             </div>
@@ -258,11 +228,11 @@
     </div>
 
     <div class="row">
-      <div class="container rounded my-2" style=" border-style: solid; border-width:2px; border-color: rgb(72, 70, 75);">
+      <div class="container rounded my-2">
         <div class="row">
           <!--################### Chef Profiles ###################-->
 
-          <div class="user-card p-3" style="max-height: 70%; min-height: 30%; width: 100%">
+          <div class="carousel-container rounded-lg rounded-lg user-card p-3" style="max-height: 70%; min-height: 30%; width: 100%">
             <div class="row">
               <!--################### Carousel ###################-->
               <div class="col-sm-12 col-md-12 col-lg-8 col-xl-9" style="height: auto">
@@ -322,10 +292,10 @@
                 </div>
               </div>
               <div class="col-sm-12 col-lg-8 col-xl-9 mt-3" style="text-align: center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                  Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p> <b>Años de experiencia: </b>25 años <br>
+                    <b>Especialidad: </b> Comida Latina <br>
+                    <b>Ganador de: </b> 2 Estrellas Michelin
+                </p>
               </div>
               <div class="col-sm-12 col-lg-4 col-xl-3 mt-3">
 
@@ -343,8 +313,8 @@
                 </div>
 
               </div>
-              <div class="col-sm-12">
-                <button id="chicote_profile" class="btn btn-success mb-0 mt-1" style="width: 100%; height:50px;margin-bottom:50px;" onClick="toMenu(this.id)">Ir a su Perfil</button>
+              <div class="col-sm-12 col-lg-9">
+                <button id="chicote_profile" class="button-style showcase-btn" style="width: auto; height:auto;" onClick="toMenu(this.id)">Ir a su Perfil</button>
               </div>
             </div>
 
@@ -355,11 +325,11 @@
     </div>
 
     <div class="row">
-      <div class="container rounded my-2" style=" border-style: solid; border-width:2px; border-color: rgb(72, 70, 75);">
+      <div class="container rounded my-2">
         <div class="row">
           <!--################### Chef Profiles ###################-->
 
-          <div class="user-card p-3" style="max-height: 70%; min-height: 30%; width: 100%">
+          <div class="carousel-container rounded-lg user-card p-3" style="max-height: 70%; min-height: 30%; width: 100%">
             <div class="row">
               <!--################### Carousel ###################-->
               <div class="col-sm-12 col-md-12 col-lg-8 col-xl-9" style="height: auto">
@@ -419,10 +389,10 @@
                 </div>
               </div>
               <div class="col-sm-12 col-lg-8 col-xl-9 mt-3" style="text-align: center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
-                  Duis
-                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p> <b>Años de experiencia: </b>3 años <br>
+                    <b>Estudió en: </b> Basque Culinary Center <br>
+                    <b>Define su comida como: </b> Mezcla de frescura y sabiduría
+                </p>
               </div>
               <div class="col-sm-12 col-lg-4 col-xl-3 mt-3">
 
@@ -439,8 +409,8 @@
                   <label for="rating-1"></label>
                 </div>
               </div>
-              <div class="col-sm-12">
-                <button id="paco_profile" class="btn btn-success mb-0 mt-1" style="width: 100%; height:50px;margin-bottom:50px;" onClick="toMenu(this.id)">Ir a su Perfil</button>
+              <div class="col-sm-12 col-lg-9">
+                <button id="paco_profile" class="button-style showcase-btn" style="width: auto; height:auto;" onClick="toMenu(this.id)">Ir a su Perfil</button>
               </div>
             </div>
           </div>
@@ -450,4 +420,112 @@
     </div>
   </main>
 
-</body>
+  </body>
+  <!--================== Contact section =====================-->
+
+  <div id="contact" class="contact">
+
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                  <h1 class="contact-heading">Ponte en contacto con nosotros</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illum ratione atque praesentium laudantium quaerat laborum consecteturLorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                  <div class="row margin-15px-bottom">
+                      <div class="col-sm-1 no-padding">
+                          <div class="contact-icon text-blue">
+                              <i class="fa fa-map-marker" aria-hidden="true" style="color:rgba(85, 28, 228, 0.9)"></i>
+                          </div>
+                      </div>
+                      <div class="col-sm-11">
+                          <p class="text-small">Barcelona, 08001<br>Barcelona, 08001</p>
+                      </div>
+                  </div>
+
+                  <div class="row margin-15px-bottom">
+                      <div class="col-sm-1 no-padding">
+                          <div class="contact-icon text-blue">
+                              <i class="fa fa-phone" aria-hidden="true" style="color:rgba(85, 28, 228, 0.9)"></i>
+                          </div>
+                      </div>
+                      <div class="col-sm-11">
+                          <p class="text-small">+34 123 456 789<br>+34 123 456 789</p>
+                      </div>
+                  </div>
+
+                  <div class="row margin-15px-bottom">
+                      <div class="col-sm-1 no-padding">
+                          <div class="contact-icon text-blue">
+                              <i class="fa fa-globe" aria-hidden="true" style="color:rgba(85, 28, 228, 0.9)"></i>
+                          </div>
+                      </div>
+                      <div class="col-sm-11 xs-margin-50px-bottom">
+                          <p class="text-small">chefpop@support.com<br>www.chefpop.com</p>
+                      </div>
+                  </div>
+
+
+              </div>
+
+
+              <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                  <!-- Starting of ajax contact form -->
+                  <form class="contact__form" method="post" action="contact_mail.php">
+                      <!-- Element of the ajax contact form -->
+                      <div class="row">
+                          <div class="col-md-6 form-group">
+                              <input name="name" type="text" class="form-control" placeholder="Name" required>
+                          </div>
+                          <div class="col-md-6 form-group">
+                              <input name="email" type="email" class="form-control" placeholder="Email" required>
+                          </div>
+                          <div class="col-md-6 form-group">
+                              <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+                          </div>
+                          <div class="col-md-6 form-group">
+                              <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+                          </div>
+                          <div class="col-12 form-group">
+                              <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+                          </div>
+                          <div class="col-12">
+                              <input name="submit" type="submit" class="button-style" value="Send Message">
+                          </div>
+                      </div>
+
+
+                  </form>
+                  <!-- Ending of ajax contact form -->
+                  <!-- Starting of successful form message -->
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                              Your message was sent successfully!!
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Ending of successful form message -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <footer class="text-center pos-re">
+      <div class="container">
+          <div class="footer__box">
+              <!-- Logo -->
+              <a class="logo" href="#">
+                  <img src="img/chef-light.png" alt="logo">
+              </a>
+
+              <div class="social">
+                  <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#0"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </div>
+
+              <p>&copy; 2020 Chef Pop. Todos los derechos reservados.</p>
+          </div>
+      </div>
+
+      <div class="curve curve-top curve-center"></div>
+  </footer>

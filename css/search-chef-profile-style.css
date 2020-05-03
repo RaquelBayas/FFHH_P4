@@ -6,7 +6,7 @@
     color: #ffffff;
     text-align: center;
     line-height: 1.4em;
-    background-color: #141414;
+    background-color:  rgba(19, 17, 22, 0.93);
 }
 
 .user-card * {
@@ -33,7 +33,7 @@
     border-radius: 20%;
     opacity: 1;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(88, 95, 228, 0.623);
     max-width: 95%;
 }
 
@@ -46,7 +46,7 @@
 .user-card h3 span {
     display: block;
     font-size: 0.6em;
-    color: #f39c12;
+    color: rgb(233, 156, 192);
     opacity: 0.75;
 }
 
