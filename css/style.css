@@ -301,6 +301,7 @@ nav a {
 
 a.navbar-brand {
     color: #fff !important;
+    font-family: 'Poppins';
 }
 
 .navbar-default {
@@ -473,7 +474,7 @@ nav:before {
 
 #testimonial {
     padding: 50px 0 30px 0;
-    text-align: center;
+    text-align: right;
 }
 
 #testimonial p {
