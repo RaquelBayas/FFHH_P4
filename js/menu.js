@@ -17,8 +17,10 @@ function add_to_card(i){
     var img_dish = c[i].children[0].children[0].src;
     var dish_name = c[i].children[0].children[1].children[0].children[0].innerText;
 
-    if(selected.style.display == "none"){
-      selected.style.display = "block";
+    if(list_cart.style.display == "none"){
+      list_cart.style.display = "block";
+      no_dishes.style.display = "none";
+      reserva.style.display = "block";
       list_cart.children[0].children[0].children[0].children[0].src = img_dish;
       list_cart.children[0].children[0].children[1].children[0].innerText = dish_name;
 
@@ -47,7 +49,9 @@ function delete_from_cart(id){
     var element = document.getElementById(id);
     list_cart.removeChild(element.parentElement.parentElement.parentElement);
   }else{
-    selected.style.display = "none";
+    list_cart.style.display = "none";
+    no_dishes.style.display = "block";
+    reserva.style.display = "none";
   }
 }
 
@@ -64,7 +68,7 @@ function randomStr() {
 }
 
 function reservar(){
-  if(selected.style.display == "none")
+  if(list_cart.style.display == "none")
     alert("Por favor, seleccione los platos que desea antes de realizar la reserva")
   else
     location.href="reserva.html";

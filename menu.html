@@ -123,7 +123,6 @@
           <input type="radio" name="rating" id="rating-1">
           <label for="rating-1"></label>
         </div>
-        <button id="reserva" class="btn btn-success" style="width: 100%; height:50px;margin-bottom:50px;" onClick="reservar()">Reservar ahora!</button>
       </div>
 
       <!--============================ All dishes go here ============================-->
@@ -306,9 +305,12 @@
 
       <!--============== List of the selected dishes ==============-->
       <div class="col">
-        <div id="selected" class="card text-center" style="display:none;">
+        <div id="selected" class="card text-center">
           <h4 style="height:40px; margin-top:15px">Platos seleccionados</h4>
-          <ul class="list-group" id="list_cart" style="min-width:300px">
+          <div id="no_dishes" class="card" style="display:block;">
+            <h5>--No tienes ningun plato seleccionado--</h5>
+          </div>
+          <ul class="list-group" id="list_cart" style="min-width:300px; display:none;">
 
             <li class="list-group-item">
               <!--<div class="row">-->
@@ -324,9 +326,8 @@
                 </div>
               </div>
             </li>
-
-          </ul>
         </div>
+      </ul><button id="reserva" class="btn btn-success" style="width: 100%; height:50px;margin-bottom:0px; margin-top:30px; display:none;" onClick="reservar()">Reservar ahora!</button>
       </div>
 
     </div>
